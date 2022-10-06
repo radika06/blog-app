@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -55,3 +56,4 @@ Route::get('/contact', function () {
     return view('blog/contact');
 });
 Route::resource('/admin/posts', PostController::class);
+Route::resource('/blog', BlogController::class);
