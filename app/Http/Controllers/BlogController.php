@@ -34,7 +34,7 @@ class BlogController extends Controller
 
     public function show(Post $post)
     {
-        return view('blog.index',compact('post'));
+        return view('blog.post',compact('post'));
     }
 
     public function edit(Post $post)
